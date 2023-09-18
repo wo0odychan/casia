@@ -3,10 +3,11 @@ $(function () {
     $('.mopen').on('click', function () {
         $(this).toggleClass('on');
         $('.gnb').toggleClass('on');
+        $('.customer_link').toggleClass('on');
 
     });
 
-    $('.gnb').on('wheel touchnove', function (e) {
+    $('.gnb').on('wheel touchmove', function (e) {
         e.preventDefault();
     });
 
